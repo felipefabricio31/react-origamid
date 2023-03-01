@@ -30,6 +30,8 @@ const App = () => {
 
   return (
     <div>
+      <h3>JSX</h3>
+
       <p>Nome: {dados.cliente}</p>
       <p>Idade: {dados.idade}</p>
       <p>
