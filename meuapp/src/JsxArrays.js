@@ -11,10 +11,10 @@ const JsxArrays = () => {
 
   return (
     <React.Fragment>
-    <hr/>
-
-    <h3> JSX Arrays</h3>
-
+    <h1 style={{color: 'blue', padding: '10px', borderTopColor: 'blue', borderTop: 'solid'}}>
+      JSX Arrays
+    </h1>
+    
     <ul>
       {filmes.map((filme) => (
         <li key={filme}>{filme}</li>
