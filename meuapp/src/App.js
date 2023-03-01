@@ -1,10 +1,11 @@
 import React from "react";
 
-const App() => {
+const App = () => {
   return (
-    <div className="">
-      Meu App
-    </div>
+    <React.Fragment>
+      <label htmlFor="nome">Nome</label>
+      <input type='text' id="nome"/>
+    </React.Fragment>
   );
 }
 
