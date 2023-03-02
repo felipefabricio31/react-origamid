@@ -1,6 +1,6 @@
 import React from "react";
 
-const App = () => {
+const StartReact = () => {
   return (
     <React.Fragment>
       <label htmlFor="nome">Nome</label>
@@ -9,4 +9,4 @@ const App = () => {
   );
 }
 
-export default App;
+export default StartReact;

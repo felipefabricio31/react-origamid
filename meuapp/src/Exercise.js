@@ -21,7 +21,7 @@ const mario = {
   ativa: false,
 };
 
-const App = () => {
+const Exercise = () => {
   const dados = mario;
 
   const total = dados.compras
@@ -46,4 +46,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Exercise;
