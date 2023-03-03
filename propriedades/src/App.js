@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+const Titulo = ({cor, texto, children}) => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1 style={{color: cor}}>
+      {texto}, {children}
+    </h1>
+    )
+}
+
+const App = () => {
+  return (
+    <div>
+      <Titulo cor="red" texto="Meu Titulo 1">
+        Isso é o Children
+      </Titulo>
+      <Titulo cor="blue" texto="Meu Titulo 2"/>
+      <Titulo texto="Meu Titulo 3"/>
     </div>
   );
 }
