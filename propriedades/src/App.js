@@ -1,23 +1,24 @@
 import React from 'react';
-
-const Titulo = ({cor, texto, children}) => {
-  return (
-    <h1 style={{color: cor}}>
-      {texto}, {children}
-    </h1>
-    )
-}
+import Header from './Header';
+import Home from './Home';
+import Produtos from './Produtos';
 
 const App = () => {
+  const { pathname } = window.location;
+
+  let Component;
+  if (pathname === '/produtos') {
+    Component = Produtos;
+  } else {
+    Component = Home;
+  }
+
   return (
-    <div>
-      <Titulo cor="red" texto="Meu Titulo 1">
-        Isso é o Children
-      </Titulo>
-      <Titulo cor="blue" texto="Meu Titulo 2"/>
-      <Titulo texto="Meu Titulo 3"/>
-    </div>
+    <section>
+      <Header />
+      <Component />
+    </section>
   );
-}
+};
 
 export default App;
